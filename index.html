@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Home » Dinajpur Institute of Science &amp; Technology</title>
+    <script src="myscripts.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="section-logo">
+      <div class="logo">
+        <a href="#"> <img src="images/logo.png" alt="" /> </a>
+      </div>
+    </div>
+    <div class="top-login-reg">
+      <ul>
+        <li>
+          <a href="#" onclick="login()"
+            >মন্তব্য <img src="images/bullet.gif" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="login()"
+            >লগ ইন <img src="images/bullet.gif" alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div class="search-ic">
+      <div class="section-social">
+        <ul>
+          <li>
+            <a class="ic-feed" href="#"> </a>
+          </li>
+          <li>
+            <a class="ic-linkedin" href="#"> </a>
+          </li>
+          <li>
+            <a class="ic-youtube" href="#"></a>
+          </li>
+          <li>
+            <a class="ic-twitter" href="#"></a>
+          </li>
+          <li>
+            <a class="ic-facebook" href="#"> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-search">
+        <form action="">
+          <input type="search" placeholder="এইখানে খুজুন.." id="" />
+          <button type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="menu-ic">
+      <button onclick="navOpen()">
+        <i class="fa fa-bars" id="menu-icon" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="nav-section">
+      <div class="nav-main" id="nav-container">
+        <a class="close-nav" onclick="navclose()"
+          ><i class="fa fa-times" aria-hidden="true"></i> বন্ধ করুন
+        </a>
+        <div class="main-list">
+          <a href="#"> হোমপেজ </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> কলেজ প্রশাসন </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> প্রাতিষ্ঠানিক কার্যক্রম </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> গ্যালারি </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> অন্যান্য তথ্য </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> যোগাযোগ </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> ভর্তি তথ্য </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> টেকনোলোজি </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> রেজাল্ট অনুসন্ধান </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> স্টুডেন্ট আইডি অনুসন্ধান </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> জব প্লেসমেন্ট </a>
+        </div>
+        <div class="main-list">
+          <a href="#"> ব্লগ </a>
+        </div>
+      </div>
+    </div>
+    <div class="news-section">
+      <marquee direction="right" scrollamount="12"
+        >টেক্সটাইল ৪র্থ, ৬ষ্ঠ, ৭ম সেমিস্টার এর রেজাল্ট প্রকাশ হয়েছে ০৮-১০-২০১৭
+        ইং</marquee
+      >
+    </div>
+
+    <div class="main-content">
+      <div class="section-left">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide active">
+              <img src="images/img1.jpg" alt="Image 1" />
+            </div>
+            <div class="slide"><img src="images/img2.jpg" alt="Image 2" /></div>
+            <div class="slide"><img src="images/img3.jpg" alt="Image 3" /></div>
+            <div class="slide"><img src="images/img4.jpg" alt="Image 4" /></div>
+            <div class="slide"><img src="images/img5.jpg" alt="Image 5" /></div>
+            <div class="slide"><img src="images/img6.jpg" alt="Image 6" /></div>
+            <!-- Add more slides as needed -->
+          </div>
+          <div class="dot-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <!-- Add more dots as needed -->
+          </div>
+          <div class="overlays" alt=""></div>
+        </div>
+
+        <div class="department">
+          <ul>
+            <li><a id="civil" href="#"></a><span>সিভিল</span></li>
+            <li><a id="electrical" href="#"></a><span>ইলেকট্রিক্যাল</span></li>
+            <li><a id="electronics" href="#"></a><span>ইলেকট্রনিক্স</span></li>
+            <li><a id="mechanical" href="#"></a> <span>মেকানিক্যাল</span></li>
+            <li><a id="computer" href="#"></a><span>কম্পিউটার সাইন্স</span></li>
+            <li>
+              <a id="fashion-design" href="#"></a> <span>ফ্যাশন ডিজাইন</span>
+            </li>
+            <li><a id="textile" href="#"></a> <span>টেক্সটাইল</span></li>
+          </ul>
+        </div>
+
+        <h2 class="border-bottom">বাংলাদেশের স্বাধীনতার সুবর্ণজয়ন্তী কর্ণার</h2>
+
+        <div class="sotoborso-container">
+          <img src="images/100years.png" alt="" />
+          <h3>বাংলাদেশের স্বাধীনতার সুবর্ণজয়ন্তী</h3>
+          <p>
+            মু-জিববর্ষ হলো বাংলাদেশের জাতির জনক বঙ্গবন্ধু শেখ মুজিবুর রহমানের
+            জন্মশতবার্ষিকী পালনের জন্য ঘোষিত বর্ষ। বাংলাদেশ সরকার ২০২০-২১ সালকে
+            (১৭ই মার্চ ২০২০ থেকে ৩১ মার্চ ২০২১ পর্যন্ত) মুজিববর্ষ হিসেবে পালনের
+            ঘোষণা দেয়।[১][২] বাংলাদেশের জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান
+            অবিভক্ত ভারতের পূর্ববঙ্গের ফরিদপুর জেলার গোপালগঞ্জ মহকুমার (বর্তমানে
+            গোপালগঞ্জ জেলা) টুঙ্গিপাড়া গ্রামে (বর্তমানে উপজেলা) ১৯২০ সালের ১৭ই
+            মার্চ জন্মগ্রহণ করেন এবং ২০২০ সালের ১৭ই মার্চ তাঁর জন্মের ১০০ বছর
+            পূর্তি হয়। তাই তাঁর এই জন্মশতবার্ষিকী উদযাপনের জন্যই....
+            <a href="#">বিস্তারিত পড়ুন</a>
+          </p>
+        </div>
+
+        <h2 class="border-bottom">কলেজ এর সংক্ষিপ্ত ইতিহাস</h2>
+        <div class="sotoborso-container">
+          <h2 class="border-bottom">
+            Dinajpur Institute of Science and Technology (DIST) (Institute Code:
+            13145)
+          </h2>
+          <img src="images/dist.jpg" alt="" />
+          <p>
+            উত্তরের জেলা দিনাজপুরের কৃষি নির্ভর অনগ্রসর জনগোষ্ঠির একটা বড় অংশ
+            যাদের জীবন মান উন্নয়নে শুধু চাকুরী নয় ব্যক্তি উদ্যাক্তা হিসেবে গড়ে
+            তুলতে কারিগরি শিক্ষার কোন বিকল্প নেই। কারিগরি শিক্ষার প্রয়োজনীয়তা
+            বিবেচনায় রেখেই ২০০৯ সালে বাংলাদেশ কারিগরি শিক্ষাবোর্ডের অনুমোদন নিয়ে
+            ব্যাক্তি উদ্যোগে দিনাজপুর শহরের প্রাণ কেন্দ্রে দিনাজপুর ইনস্টিটিউট
+            অব সাইন্স এ্যান্ড টেকনোলজি (DIST) প্রতিষ্ঠিত হয়। ২০১০-১১ শিক্ষাবর্ষে
+            চার বছর মেয়াদী ডিপ্লোমা-ইন-ইঞ্জিনিয়ারং কোর্সে দুটি টেকনোলজিতে ৭৫ জন
+            শিক্ষার্থী নিয়ে পথ চলা শুরু করে। বর্তমানে এই প্রতিষ্ঠানে মোট
+            টেকনোলজির সংখ্যা ৮টি এবং শিক্ষার্থীর সংখ্যা প্রায় ২০০০ জন।
+            গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের শিক্ষা মন্ত্রণালয় এর কারিগরি ও
+            মাদ্রাসা শিক্ষা বিভাগের অধীন কারিগরি শিক্ষা অধিদপ্তর এর তত্তাবধানে
+            প্রতিষ্ঠানটি পরিচালিত হয়ে থাকে এবং প্রতিষ্ঠানটির একাডেমিক দিকটি
+            বাংলাদেশ কারিগরি শিক্ষা বোর্ড কর্তৃক নিয়ন্ত্রিত হয়ে থাকে....
+            <a href="#">বিস্তারিত পড়ুন</a>
+          </p>
+        </div>
+        <h2 class="border-bottom">অধ্যক্ষের কিছু কথা</h2>
+        <div class="sotoborso-container">
+          <h4>Dinajpur Institute Of Science & Technology</h4>
+          <div>দিনাজপুর ইন্সটিটিউট অফ সাইন্স এন্ড টেকনোলজি(DIST)</div>
+          <br />
+          <p>
+            বর্তমান যুগ তথ্য ও প্রযুক্তির যুগ। সমাজ তথা রাষ্ট্রীয় জীবনের
+            প্রতিটি ক্ষেত্রে উন্নয়নের লক্ষ্যে তথ্য ও প্রযুক্তির বিকল্প
+            নেই।শিক্ষা প্রতিষ্ঠানের কার্যক্রমকে আধুনিক ও গতিশীল করার জন্য তথ্য ও
+            প্রযুক্তির ব্যবহার অনস্বীকার্য। শিক্ষা বিষয়ক কার্যক্রমকে গতিশীল ও
+            স্বচ্ছ করার প্রয়োজনে অনলাইন (online) কার্যক্রমের সফল বাস্তবায়নের
+            লক্ষ্যে প্রতিষ্ঠানের ওয়েব সাইট স্থাপন ও ব্যবহার যেমন শিক্ষা
+            ব্যবস্থাকে গতিশীল করে তুলবে তেমনি ডিজিটাল বাংলাদেশ গড়ার ক্ষেত্রে ও
+            গুরুত্বপূর্ণ ভূমিকা পালন করবে এবং ভিশন, ২০২১ বাস্তবায়নে সূদুর
+            প্রসারী প্রভাব রাখবে বলে আমি সর্বান্তকরনে বিশ্বাস করি ।
+          </p>
+          <br />
+          <br />
+
+          <div class="rtl-text">
+            অধ্যক্ষ <br />
+            Dinajpur Institute Of Science & Technology <br />
+            দিনাজপুর ইন্সটিটিউট অফ সাইন্স এন্ড টেকনোলজি(DIST)
+          </div>
+        </div>
+      </div>
+      <div class="section-right">
+        <div class="section-accordion">
+          <button class="accordion">নোটিশ বোর্ড</button>
+          <div class="panel"></div>
+
+          <button class="accordion">ক্লাস রুটিন</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">সিলেবাস</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">পরীক্ষার রুটিন</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <button class="accordion">রেজাল্ট</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="important-links">
+          <div class="header-links-list">গুরুত্বপূর্ণ লিঙ্ক</div>
+          <ul>
+            <li>
+              <a href="">শিক্ষা মন্ত্রনালয়</a>
+            </li>
+            <li><a href="">শিক্ষক বাতায়ন</a></li>
+            <li><a href="">কারিগরি শিক্ষা অধিদপ্তর</a></li>
+            <li><a href="">জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড </a></li>
+            <li><a href="">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li>
+            <li>
+              <a href=""
+                >দিনাজপুর ইন্সটিটিউট অফ সাইন্স এন্ড টেকনোলজির সকল রেজাল্ট
+                অনুসন্ধান</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >কারিগরি শিক্ষা বোর্ড, ঢাকা।দিনাজপুর ইন্সটিটিউট অফ সাইন্স এন্ড
+                টেকনোলজি এর অফিসিয়াল ফেসবুক পেজ</a
+              >
+            </li>
+            <li><a href="">মাল্টিমিডিয়া ক্লাসরুম ম্যানেজমেন্ট সিস্টেম </a></li>
+            <li><a href="">STEP </a></li>
+            <li><a href="">জেলা প্রশাসন , দিনাজপুর।</a></li>
+          </ul>
+        </div>
+
+        <div class="calendar-container">
+          <header class="calendar-header">
+            <p class="calendar-current-date"></p>
+            <div class="calendar-navigation">
+              <span id="calendar-prev" class="fa fa-arrow-circle-left"> </span>
+              <span id="calendar-next" class="fa fa-arrow-circle-right"> </span>
+            </div>
+          </header>
+
+          <div class="calendar-body">
+            <ul class="calendar-weekdays">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+            <ul class="calendar-dates"></ul>
+          </div>
+        </div>
+        <div class="section-map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57559.13297170578!2d88.60522383412729!3d25.62332542413747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409c163a12ad10ad%3A0xfc46e8e56e787935!2sDinajpur%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sbn!2sbd!4v1707997735094!5m2!1sbn!2sbd"
+            width="100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrap-footer">
+        <div class="footer-logo">
+          <img
+            src="images/footer-logo.png"
+            alt="inajpur Institute of Science &amp; Technology"
+          />
+        </div>
+        <div class="ourAddress">
+          <h4>Our Address</h4>
+          <p class="dist">Dinajpur Institute of Science &amp; Technology</p>
+          <p>
+            Paharpur, Sadar, Dinajpur-5200.<br />
+            <strong>Tel:&nbsp;</strong>0531-66080, 01720-548422, 01727-446833<br />
+            <strong>Email:&nbsp;</strong
+            ><a href="mailto:distbd@gmail.com">distbd@gmail.com</a><br />
+          </p>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="/page/electrical-1" id="link-142"
+              ><span>ইলেক্ট্রিক্যাল ইঞ্জিনিয়ারিং বিভাগ</span></a
+            >
+          </li>
+          <li>
+            <a href="/page/engineering-1" id="link-143"
+              ><span>ইলেক্ট্রনিক্স ইঞ্জিনিয়ারিং বিভাগ</span></a
+            >
+          </li>
+          <li>
+            <a href="/page/mechanical-1" id="link-144"
+              ><span>মেকানিক্যাল ইঞ্জিনিয়ারিং বিভাগ</span></a
+            >
+          </li>
+          <li>
+            <a href="/page/computer-1" id="link-145"
+              ><span>কম্পিউটার ইঞ্জিনিয়ারিং বিভাগ</span></a
+            >
+          </li>
+        </ul>
+        <ul class="menu2">
+          <li>
+            <a href="#" id="link-146"
+              ><span>ফ্যাশান ডিজাইন ইঞ্জিনিয়ারিং বিভাগ</span></a
+            >
+          </li>
+          <li>
+            <a href="/page/textile-1" id="link-147"
+              ><span>টেক্সটাইল ইঞ্জিনিয়ারিং বিভাগ</span></a
+            >
+          </li>
+          <li>
+            <a href="/page/civil-1" id="link-148"
+              ><span>সিভিল ইঞ্জিনিয়ারিং বিভাগ</span></a
+            >
+          </li>
+        </ul>
+        <a href="http://tech-plexus.com/" class="ftrLogo" target="_blank"
+          ><img class="amzad" src="images/amzad.png" alt="Md Amzad Hossain."
+        /></a>
+      </div>
+    </footer>
+
+    <div class="popup-window" id="myDisplay">
+      <form action="#">
+        <a class="close" onclick="closebtn()"
+          ><i class="fa fa-times" aria-hidden="true"></i
+        ></a>
+        <p class="login-text">Login</p>
+        <input type="email" placeholder="Your Email Address.." required />
+        <input
+          type="password"
+          placeholder="Your Password.."
+          name=""
+          id=""
+          required
+        />
+        <input type="submit" value="Login" />
+        <p>or use a social network</p>
+        <div class="social">
+          <a class="circle-social" href=""
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+          <a class="circle-social" href=""
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a class="circle-social" href=""
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </div>
+        <hr />
+        <div class="container-bottom">
+          <span>Not a member yet?</span> <a href="#">Sign Up.</a>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      //accordio js
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+
+      //calender code
+
+      let date = new Date();
+      let year = date.getFullYear();
+      let month = date.getMonth();
+
+      const day = document.querySelector(".calendar-dates");
+
+      const currdate = document.querySelector(".calendar-current-date");
+
+      const prenexIcons = document.querySelectorAll(
+        ".calendar-navigation span"
+      );
+
+      // Array of month names
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      // Function to generate the calendar
+      const manipulate = () => {
+        // Get the first day of the month
+        let dayone = new Date(year, month, 1).getDay();
+
+        // Get the last date of the month
+        let lastdate = new Date(year, month + 1, 0).getDate();
+
+        // Get the day of the last date of the month
+        let dayend = new Date(year, month, lastdate).getDay();
+
+        // Get the last date of the previous month
+        let monthlastdate = new Date(year, month, 0).getDate();
+
+        // Variable to store the generated calendar HTML
+        let lit = "";
+
+        // Loop to add the last dates of the previous month
+        for (let i = dayone; i > 0; i--) {
+          lit += `<li class="inactive">${monthlastdate - i + 1}</li>`;
+        }
+
+        // Loop to add the dates of the current month
+        for (let i = 1; i <= lastdate; i++) {
+          // Check if the current date is today
+          let isToday =
+            i === date.getDate() &&
+            month === new Date().getMonth() &&
+            year === new Date().getFullYear()
+              ? "active"
+              : "";
+          lit += `<li class="${isToday}">${i}</li>`;
+        }
+
+        // Loop to add the first dates of the next month
+        for (let i = dayend; i < 6; i++) {
+          lit += `<li class="inactive">${i - dayend + 1}</li>`;
+        }
+
+        // Update the text of the current date element
+        // with the formatted current month and year
+        currdate.innerText = `${months[month]} ${year}`;
+
+        // update the HTML of the dates element
+        // with the generated calendar
+        day.innerHTML = lit;
+      };
+
+      manipulate();
+
+      // Attach a click event listener to each icon
+      prenexIcons.forEach((icon) => {
+        // When an icon is clicked
+        icon.addEventListener("click", () => {
+          // Check if the icon is "calendar-prev"
+          // or "calendar-next"
+          month = icon.id === "calendar-prev" ? month - 1 : month + 1;
+
+          // Check if the month is out of range
+          if (month < 0 || month > 11) {
+            // Set the date to the first day of the
+            // month with the new year
+            date = new Date(year, month, new Date().getDate());
+
+            // Set the year to the new year
+            year = date.getFullYear();
+
+            // Set the month to the new month
+            month = date.getMonth();
+          } else {
+            // Set the date to the current date
+            date = new Date();
+          }
+
+          // Call the manipulate function to
+          // update the calendar display
+          manipulate();
+        });
+      });
+      // slider js
+      let currentSlideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+
+      function showSlide(n) {
+        if (n >= slides.length) {
+          currentSlideIndex = 0;
+        } else if (n < 0) {
+          currentSlideIndex = slides.length - 1;
+        } else {
+          currentSlideIndex = n;
+        }
+
+        slides.forEach((slide) => slide.classList.remove("active"));
+        dots.forEach((dot) => dot.classList.remove("active"));
+
+        slides[currentSlideIndex].classList.add("active");
+        dots[currentSlideIndex].classList.add("active");
+      }
+
+      function currentSlide(n) {
+        showSlide(n);
+      }
+
+      setInterval(() => {
+        showSlide(currentSlideIndex + 1);
+      }, 1500);
+    </script>
+  </body>
+</html>
